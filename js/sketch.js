@@ -45,7 +45,7 @@ function setup () {
 }
 
 function inputEvent() {
-    console.log(this.value())
+    // console.log(this.value())
 }
 
 
@@ -88,12 +88,12 @@ function drawSomewhere() {
     textW = textWidth(textContent);
     if(textW > textWidth('Somewhere')) {
         textW =  textW * 1.4;
-        console.log(textW)
+        // console.log(textW)
     } else if (textW === textWidth('WWWWWWWWWWWWWW')){
         textW =  textW * 1.6;
     } else {
         textW = 0;
-        console.log(textW)
+        // console.log(textW)
     }
     
     // for (let i = 0; i < 20; i++) {
@@ -131,6 +131,7 @@ function draw() {
     //     textSize(32);
     //     text(inp.value(), 87.5, 125);
     // }
+    cursor(CROSS);
     beginShape();
     for (const { x, y } of poly)  vertex(x, y);
     endShape(CLOSE);
@@ -140,6 +141,6 @@ function draw() {
     }
     textContent = inp.value();
     textW = textWidth(textContent);
-    console.log(textW);
+    // console.log(textW);
 }
 
