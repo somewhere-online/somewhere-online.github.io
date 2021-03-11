@@ -18,3 +18,9 @@ canvas {
     border-width: 2px;
     border-color: black;
 }
+
+#saveButton {
+    position: absolute;
+    left: 50px;
+    bottom: 4%
+}

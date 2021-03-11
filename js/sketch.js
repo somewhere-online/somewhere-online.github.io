@@ -48,6 +48,9 @@ function inputEvent() {
     // console.log(this.value())
 }
 
+function saveSketch() {
+    saveCanvas();
+}
 
 
 // function goSomewhere() {
@@ -84,6 +87,9 @@ function inputEvent() {
 
 function drawSomewhere() {
     const place = inp.value();
+    if (place === 'are.na') {
+        window.open('http://are.na/somewhere')
+    }
     textContent = inp.value();
     textW = textWidth(textContent);
     if(textW > textWidth('Somewhere')) {
